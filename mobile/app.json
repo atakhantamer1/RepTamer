@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "ParkRide Mobile",
+    "slug": "parkride-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "extra": {
+      "apiBaseUrl": "http://localhost:4000/api"
+    }
+  }
+}
