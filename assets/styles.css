@@ -76,6 +76,14 @@ header {
   padding: 92px 0 64px;
 }
 
+.hero-layout,
+.split-layout {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.15;
@@ -86,6 +94,23 @@ header {
   font-size: 1.15rem;
   color: var(--muted);
   max-width: 720px;
+}
+
+.hero-visual,
+.section-visual {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+.hero-visual img,
+.section-visual img,
+.page-hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
 }
 
 .grid {
@@ -177,6 +202,13 @@ footer {
   padding: 62px 0 30px;
 }
 
+.page-hero-block {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 22px;
+  align-items: center;
+}
+
 .meta {
   color: var(--muted);
   font-size: 0.96rem;
@@ -184,6 +216,11 @@ footer {
 
 @media (max-width: 900px) {
   .col-4, .col-6 { grid-column: span 12; }
-  .contact { grid-template-columns: 1fr; }
+  .contact,
+  .hero-layout,
+  .split-layout,
+  .page-hero-block {
+    grid-template-columns: 1fr;
+  }
   .hero { padding-top: 76px; }
 }
